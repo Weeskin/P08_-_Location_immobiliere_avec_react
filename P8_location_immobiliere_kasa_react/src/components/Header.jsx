@@ -1,22 +1,17 @@
+import logo from "../assets/logo/logo-header.png";
+import Navbar from "./Navbar";
+
 export default function Header() {
 	return (
-		<header>
-			<div>
+		<div className="header">
+			<div className="logo">
 				<img
-					src="img/logo.svg"
-					alt="Kasa"
+					className="logo-kasa"
+					src={logo}
+					alt="logo d'agence"
 				/>
-				<nav>
-					<ul>
-						<li>
-							<a href="#">Accueil</a>
-						</li>
-						<li>
-							<a href="#">A Propos</a>
-						</li>
-					</ul>
-				</nav>
 			</div>
-		</header>
+			<Navbar />
+		</div>
 	);
 }

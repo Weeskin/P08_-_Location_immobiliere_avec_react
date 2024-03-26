@@ -1,0 +1,41 @@
+@import './styles/colors';
+@import './styles/mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 83.8vw;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  .logo {
+    @include position-left;
+
+    .logo-kasa {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .navbar {
+    @include position-right;
+
+    .link {
+      color: $black;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 70px;
+      cursor: pointer;
+
+      &.link-acceuil:hover {
+        text-decoration: underline;
+      }
+
+      &.link-apropos:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
