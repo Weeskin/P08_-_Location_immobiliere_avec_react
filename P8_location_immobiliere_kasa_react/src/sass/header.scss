@@ -5,16 +5,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 83.8vw;
-  margin: 0 auto;
-  margin-top: 20px;
+  width: 90vw;
+  margin: 2rem auto auto auto;
+
 
   .logo {
     @include position-left;
 
     .logo-kasa {
-      width: 100px;
-      height: 100px;
+      height: 3rem;
     }
   }
 
@@ -29,11 +28,7 @@
       margin-left: 70px;
       cursor: pointer;
 
-      &.link-acceuil:hover {
-        text-decoration: underline;
-      }
-
-      &.link-apropos:hover {
+      &:hover {
         text-decoration: underline;
       }
     }

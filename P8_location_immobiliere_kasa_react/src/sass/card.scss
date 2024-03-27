@@ -1,0 +1,51 @@
+.card-container {
+    @include center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3vw;
+    width: calc(83.8vw - 4rem);
+    padding-top: 3rem;
+    background-color: $banner-background;
+    border-radius: 25px;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .link-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        width: 23.5vw;
+        height: 23.5vh;
+
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+
+        .card-background {
+            background-image: linear-gradient(180deg, #fff0, #00000080);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            position: absolute;
+            width: 55%;
+            font-size: 18px;
+            font-weight: 700;
+            color: $white;
+            z-index: 3;
+            padding-left: 20px;
+        }
+    }
+}
