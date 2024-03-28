@@ -1,7 +1,7 @@
 @import './styles/colors';
 @import './styles/mixins';
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -11,6 +11,10 @@
 
   .logo {
     @include position-left;
+
+    :hover {
+      cursor: pointer;
+    }
 
     .logo-kasa {
       height: 3rem;

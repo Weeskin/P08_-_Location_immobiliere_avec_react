@@ -1,17 +1,20 @@
 import logo from "../assets/logo/logo-header.png";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 	return (
-		<div className="header">
-			<div className="logo">
-				<img
-					className="logo-kasa"
-					src={logo}
-					alt="logo d'agence"
-				/>
-			</div>
+		<header>
+			<Link to="/">
+				<div className="logo">
+					<img
+						className="logo-kasa"
+						src={logo}
+						alt="logo d'agence"
+					></img>
+				</div>
+			</Link>
 			<Navbar />
-		</div>
+		</header>
 	);
 }

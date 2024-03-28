@@ -4,12 +4,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3vw;
     width: calc(83.8vw - 4rem);
-    padding-top: 3rem;
     background-color: $banner-background;
     border-radius: 25px;
     position: relative;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 3vw;
 
     .link-card {
         display: flex;

@@ -1,6 +1,4 @@
-import image from "../assets/banners/banner-home.png";
-
-export default function Banner() {
+export default function Banner({ image, title }) {
 	return (
 		<div className="banner">
 			<img
@@ -9,7 +7,7 @@ export default function Banner() {
 				alt="banner"
 			/>
 			<div className="banner-background"></div>
-			<div className="banner-title">Chez vous, partout et ailleurs</div>
+			<div className="banner-title">{title}</div>
 		</div>
 	);
 }
