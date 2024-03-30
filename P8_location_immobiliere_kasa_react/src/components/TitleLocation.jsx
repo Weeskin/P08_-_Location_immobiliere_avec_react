@@ -1,4 +1,4 @@
-export default function TitleLocation(title, location) {
+export default function TitleLocation({ title, location }) {
 	return (
 		<div className="title-location">
 			{" "}

@@ -1,4 +1,4 @@
-export default function Tags(tags) {
+export default function Tags({ tags }) {
 	return (
 		<div className="tags">
 			{tags.map((tag, index) => (
