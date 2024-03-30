@@ -1,6 +1,7 @@
 import ArrowBackUp from "../assets/collapse/arrow-back_up.png";
 import ArrowBackDown from "../assets/collapse/arrow-back_down.png";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function Collapse({ id, title, description }) {
 	//state
@@ -43,3 +44,9 @@ export default function Collapse({ id, title, description }) {
 		</section>
 	);
 }
+
+Collapse.propTypes = {
+	id: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	description: PropTypes.string
+};

@@ -1,3 +1,4 @@
+import propTypes from "prop-types";
 export default function Tags({ tags }) {
 	return (
 		<div className="tags">
@@ -7,3 +8,7 @@ export default function Tags({ tags }) {
 		</div>
 	);
 }
+
+Tags.propTypes = {
+	tags: PropTypes.string.isRequired
+};

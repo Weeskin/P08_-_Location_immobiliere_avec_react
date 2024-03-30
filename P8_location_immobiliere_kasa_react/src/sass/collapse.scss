@@ -59,9 +59,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
+    width: 90 vw;
 
     .collapse {
         width: 40vw;
+        justify-content: space-around;
 
         .collapse-header {
             display: flex;
