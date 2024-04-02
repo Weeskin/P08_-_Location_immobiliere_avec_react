@@ -3,15 +3,14 @@
 
 .appartement-info_location {
     .label-container {
-
-        .appartement-title {
+        .title-location {
             font-size: 36px;
             font-weight: 500;
             color: $primary;
             margin-bottom: 0%;
         }
 
-        .appartement-location {
+        .subtitle-location {
             font-size: 18px;
             font-weight: 500;
             color: $black;
@@ -24,15 +23,16 @@
 
 
         span {
-            text-align: center;
             @include center;
+            text-align: center;
             width: 7.19rem;
-            height: 25px;
+            height: 1.8vw;
             border-radius: 10px;
             background-color: $primary;
             color: $white;
             padding: 3px 40px 3px 40px;
             margin-right: 10px;
+            text-wrap: nowrap;
         }
     }
 }
