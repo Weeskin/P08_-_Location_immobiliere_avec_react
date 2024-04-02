@@ -22,14 +22,14 @@ export default function Appartement() {
 		<div className="appartement-container">
 			<Slideshow pictures={selectedAppartement.pictures} />
 			<div className="appartement-info_container">
-				<div className="appartement-info_profil">
+				<div className="appartement-info_location">
 					<TitleLocation
 						title={selectedAppartement.title}
 						location={selectedAppartement.location}
 					/>
 					<Tags tags={selectedAppartement.tags} />
 				</div>
-				<div className="appartement-info_profil">
+				<div className="appartement-info_host">
 					<Host
 						name={selectedAppartement.host.name}
 						picture={selectedAppartement.host.picture}

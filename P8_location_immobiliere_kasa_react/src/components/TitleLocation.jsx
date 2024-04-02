@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export default function TitleLocation({ title, location }) {
 	return (
 		<div className="title-location">
@@ -6,3 +7,7 @@ export default function TitleLocation({ title, location }) {
 		</div>
 	);
 }
+TitleLocation.propTypes = {
+	title: PropTypes.string,
+	location: PropTypes.string
+};

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Banner({ image, title }) {
 	return (
 		<div className="banner">
@@ -11,3 +13,8 @@ export default function Banner({ image, title }) {
 		</div>
 	);
 }
+
+Banner.propTypes = {
+	image: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired
+};

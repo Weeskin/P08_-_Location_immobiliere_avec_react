@@ -1,6 +1,7 @@
 import ArrowBack from "../assets/arrows/arrow-back.png";
 import ArrowForward from "../assets/arrows/arrow-forward.png";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function Slideshow({ pictures }) {
 	//state
@@ -52,3 +53,8 @@ export default function Slideshow({ pictures }) {
 		</div>
 	);
 }
+
+Slideshow.propTypes = {
+	pictures: PropTypes.array,
+	title: PropTypes.string
+};
