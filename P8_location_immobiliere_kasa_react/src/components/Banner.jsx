@@ -15,6 +15,6 @@ export default function Banner({ image, title }) {
 }
 
 Banner.propTypes = {
-	image: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired
+	image: PropTypes.string,
+	title: PropTypes.string
 };

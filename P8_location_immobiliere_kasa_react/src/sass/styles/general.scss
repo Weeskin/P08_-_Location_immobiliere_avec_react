@@ -9,6 +9,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   #root {
     height: 100%;
@@ -24,4 +25,12 @@ body {
       margin: 0 auto;
     }
   }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
