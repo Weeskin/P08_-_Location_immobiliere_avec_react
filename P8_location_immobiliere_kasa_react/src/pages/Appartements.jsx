@@ -1,4 +1,4 @@
-import { useParams, Route } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
 import TitleLocation from "../components/TitleLocation";
 import Tags from "../components/Tags";
@@ -15,7 +15,7 @@ export default function Appartement() {
 	console.log(selectedAppartement);
 
 	if (!selectedAppartement) {
-		return <Route to="error" />;
+		return <Navigate to="error" />;
 	}
 
 	return (

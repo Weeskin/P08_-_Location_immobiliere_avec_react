@@ -4,12 +4,15 @@
 .collapse-container_apropos {
     @include center-column;
     width: 100vw;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
 
     .collapse {
         width: 100vw;
         margin-bottom: 2rem;
         max-width: 70vw;
         cursor: pointer;
+        max-height: 300px;
 
         .collapse-header {
             display: flex;
@@ -41,6 +44,12 @@
             color: $primary;
             border-radius: 0px 0px 5px 5px;
             background-color: $background;
+            overflow: hidden;
+            transition: max-height 1s ease-out;
+
+            &.open {
+                max-height: 300px;
+            }
 
             p {
                 margin: 0;
@@ -93,6 +102,12 @@
             color: $primary;
             border-radius: 0px 0px 5px 5px;
             background-color: $background;
+            overflow: hidden;
+            transition: max-height 1s ease-out;
+
+            &.open {
+                max-height: 300px;
+            }
 
             p {
                 margin: 0;
