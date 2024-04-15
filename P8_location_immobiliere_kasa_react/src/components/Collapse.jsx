@@ -40,11 +40,9 @@ export default function Collapse({ id, title, description }) {
 					className="arrow-back"
 				/>
 			</div>
-			{isOpen && (
-				<div className={`collapse-body ${isOpen ? "open" : ""}`}>
-					{contentElement}
-				</div>
-			)}
+			<div className={`collapse-body ${isOpen ? "collapse-body--open" : ""}`}>
+				{contentElement}
+			</div>
 		</section>
 	);
 }

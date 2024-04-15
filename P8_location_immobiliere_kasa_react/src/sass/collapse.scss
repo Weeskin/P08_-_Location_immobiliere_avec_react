@@ -46,8 +46,10 @@
             background-color: $background;
             overflow: hidden;
             transition: max-height 1s ease-out;
+            max-height: 0px;
+            transition: max-height 1s;
 
-            &.open {
+            &--open {
                 max-height: 300px;
             }
 
@@ -55,9 +57,9 @@
                 margin: 0;
                 color: $black;
                 font-weight: 500;
-                font-size: 1.13rem;
-                line-height: 26px;
                 padding: 10px 20px 10px 15px;
+                font-size: 1.13rem;
+                line-height: 25.67px;
             }
         }
     }
@@ -104,8 +106,10 @@
             background-color: $background;
             overflow: hidden;
             transition: max-height 1s ease-out;
+            max-height: 0px;
+            transition: max-height 1s;
 
-            &.open {
+            &--open {
                 max-height: 300px;
             }
 
