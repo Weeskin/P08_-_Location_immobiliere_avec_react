@@ -1,7 +1,8 @@
 # Projet 8 - Location Immobilière avec react
 ![image](https://github.com/Weeskin/P8_-_Location_immobiliere_avec_react/assets/115654885/118f97bf-b2d5-4c03-a90e-267636e9d8b2)
 
-Exercice avec Vite + React ![image width=250x](https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png)
+Exercice avec Vite + React ![image](https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png)
+{: height="36px" width="36px"}
 
 ## Présentation
 Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. 
