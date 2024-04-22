@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Rate({ rating }) {
 	const range = [1, 2, 3, 4, 5];
-	const countRating = parseInt(rating);
+	const countRating = parseInt(rating, 10);
 
 	return (
 		<div className="rate">
@@ -30,5 +30,5 @@ export default function Rate({ rating }) {
 }
 
 Rate.propTypes = {
-	rating: PropTypes.number.isRequired
+	rating: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired
 };
